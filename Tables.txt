@@ -1,0 +1,92 @@
+getgenv().SkyGlow = {
+    Main = {
+        TargetingType = "Target", --// Change to "FOV" to use FOV Mode.
+        Resolver = {
+            Enabled = true,
+            AutoResolve = true,
+            MinVelocity = -50,
+            MaxVelocity = 50,
+        },
+        MemorySpoof = true,
+        MinMemory = 900,
+        MaxMemory = 1025,
+        UnlockOnDeath = false,
+    },
+    SilentAim = {
+        Enabled = true,
+        AntiGround = true,
+        PredictMovement = true,
+        PredictionAmmount = 0.137,
+        PingPrediction = false, 
+        HitChance = 100, 
+        HitParts = {"Head","UpperTorso"},
+        HitPartMode = "Nearest Part",
+        ShowDOT = true
+    },
+    AimAssist = {
+        Enabled = true,
+        PredictMovement = true,
+        PredictionAmmount = (0.13),
+        HitParts = {"Head", "UpperTorso"},
+        HitPartMode = "Nearest Part",
+        ShakeEnabled = false,
+        XSHAKE = 5,
+        YSHAKE = 5,
+        ZSHAKE = 5,
+        SmoothnessAmmount = 0.009,
+    },
+    FovSettings = {
+        SilentVisible = true,
+        SilentFilled = false,
+        SilentRadius = 25,
+
+        AimAssistVisible = true,
+        AimAssistFilled = false,
+        AimAssistRadius = 20,
+    },
+    Checks = {
+        DeathMatch = true, --// Keep this enabled if playing hood games
+        WallCheck = true,
+        VisibleCheck = true,
+        CrewCheck = false, 
+        FriendCheck = false, 
+    },
+    Keybinds = {
+        UnloadBind = "V",
+        TargetBind = "C",
+    },
+    Commands = {
+        Enabled = false,
+        SilentAimToggle = "s!enabled", 
+        SilentAimPrediction = "s!pred", 
+        SilentAimFovSize = "s!fov", 
+        SilentAimFovToggle = "s!show", 
+        SilentAimHChance = "s!chance",
+        AimAssistToggle = "a!enabled",
+        AimAssistPrediction = "a!pred",
+        AimAssistFovSize = "a!fov",
+        AimAssistFovToggle = "a!show", 
+        AimAssistSmoothing = "a!smooth"
+    },
+    PredefinedPredictions = { 
+        p20_30 = 0.11120,
+        p30_40 = 0.11614,
+        p40_50 = 0.12053,
+        p50_60 = 0.12053,
+        p60_70 = 0.12790,
+        p70_80 = 0.12793,
+        p80_90 = 0.129591,
+        p90_100 = 0.13070,
+        p100_110 = 0.13916,
+        p110_120 = 0.14664,
+        p120_130 = 0.14745,
+        p130_140 = 0.150,
+        p140_150 = 0.155,
+        p150_160 = 0.1545,
+        p160_170 = 0.1567,
+        p170_180 = 0.1672,
+        p180_190 = 0.1746,
+        p190_200 = 0.1746,
+    },
+    SkyGlowData = { Hash = "8ra5V*QV&J8Oawj" } --// leave this default or script WONT work.
+}
